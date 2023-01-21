@@ -56,8 +56,8 @@ static void SwapTwoNumbers()
 
 static void Swap(ref int firstNum, ref int secondNum)
 {
-    secondNum = firstNum + secondNum;
+    secondNum += firstNum;
     firstNum = secondNum - firstNum;
-    secondNum = secondNum - firstNum;
+    secondNum -= firstNum;
 }
 
